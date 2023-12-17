@@ -1,0 +1,62 @@
+.page_header {
+  display: grid;
+  align-items: center;
+  justify-items: start;
+  text-align: start;
+}
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --text: #758398;
+  --accent: #009BDF;
+  --darkblue: #084088;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+p, h1, h2, h3, h4, a {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.page_main {
+  display: grid;
+  align-items: center;
+  min-height: 100vh;
+}
+.page_main > .hero_section {
+  display: grid;
+}
+.page_main > .hero_section > .image_container {
+  display: grid;
+}
+.page_main > .hero_section > .image_container > #port_image {
+  width: 200px;
+}
+.page_main > .hero_section > .hero_text {
+  display: grid;
+}
+.page_main > .about_section {
+  display: grid;
+}
+.page_main > .about_section > .about_article {
+  display: grid;
+}
+.page_main > .skills_section {
+  display: grid;
+}
+.page_main > .skills_section > .wrapper_article {
+  display: grid;
+}
+.page_main > .projects_section {
+  display: grid;
+}
+.page_main > .projects_section > .proj_article > .proj_skills {
+  display: grid;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,89 @@
+@use "header";
+@use "footer";
+@use "colours";
+//DEFAULTS
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+p,h1,h2,h3,h4,a{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+//MAIN PAGE
+.page_main{
+    display: grid;
+    align-items: center;
+    min-height: 100vh;
+    //HERO SECTION STYLES
+    >.hero_section{
+        display: grid;
+        >.image_container{
+            display: grid;
+            >#port_image{
+                width: 200px;
+            }
+        }
+        >.hero_text{
+            display: grid;
+            >h3{
+
+            }
+            >h1{
+
+            }
+            >p{
+
+            }
+        }
+    }
+    //ABOUT SECTION STYLES
+    >.about_section{
+        display: grid;
+        >.about_article{
+            display: grid;
+            >h2{
+
+            }
+            >p{
+
+            }
+        }
+    }
+    //SKILLS SECTION STYLES
+    >.skills_section{
+        display: grid;
+        >.wrapper_article{
+            display: grid;
+            >p{
+
+            }
+        }
+    }
+    //PROJECTS SECTION STYLES
+    >.projects_section{
+        display: grid;
+
+        >.proj_article{
+
+            >.proj_title{
+
+            }
+            >.proj_image{
+
+            }
+            >.proj_desc{
+
+            }
+            >.proj_skills{
+                display: grid;
+                >p{
+
+                }
+            }
+        }
+    }
+}
