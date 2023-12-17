@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
 </head>
+
 <body>
     <header class="page_header">
-        <h2 class="header_text">Cameron Ord</h2>
+        <div class="header_text_div">
+            <h2 class="header_text">Cameron Ord</h2>
+        </div>
     </header>
     <main class="page_main">
         <section class="hero_section">
@@ -16,15 +23,39 @@
             <article class="hero_text">
                 <h3>Hello, my name is</h3>
                 <h1>Cameron Ord</h1>
-                <p>cameron.ian.ronald.ord@outlook.com</p>
+                <p class="email_tag">cameron.ian.ronald.ord@outlook.com</p>
                 <p>587-990-0854</p>
                 <p>Resume</p>
             </article>
         </section>
         <section class="about_section">
             <article class="about_article">
-                <h2>About me</h2>
-                <p>lorem</p>
+                <h2 class="about_heading">About me</h2>
+                <p class="default_text">Hello there! I'm Cameron, a passionate and enthusiastic junior web developer
+                    with a love for crafting
+                    seamless digital experiences. My journey into the world of coding has been an exhilarating ride, and
+                    I'm
+                    thrilled to share my skills and projects with you.</p>
+                <h2 class="sub_heading">What I Bring to the Table</h2>
+                <h4 class="skill_sub_heading">Full-Stack Developer</h4>
+                <p class="default_text">From JavaScript to Go and Python, I navigate the full stack with ease. HTML/CSS
+                    is my
+                    canvas, and I use MariaDB to shape and store the data that powers my applications.</p>
+                <h4 class="skill_sub_heading">Programming Proficiency</h4>
+                <p class="default_text">With a foundation in C/C++, I bring a nuanced perspective to web development,
+                    leveraging insights to craft lean, efficient code for robust solutions.</p>
+                <h4 class="skill_sub_heading">Vue.js Aficionado</h4>
+                <p class="default_text">My framework of choice is Vue.js, where I bring dynamic and responsive user
+                    interfaces to
+                    life. I believe in the power of elegant and efficient front-end development to create immersive web
+                    applications. I really enjoy using vue3's composition API.</p>
+                <h4 class="skill_sub_heading">Linux & Bash Maestro</h4>
+                <p class="default_text">Navigating the Linux landscape with finesse, my expertise extends from intricate
+                    system
+                    configurations to mastering the art of Bash scripting. Command-line proficiency, system
+                    optimization, and
+                    seamless automation are at the core of my skills, ensuring a robust and efficient Linux environment.
+                </p>
             </article>
         </section>
         <section class="skills_section">
@@ -36,19 +67,30 @@
                 <p>Python</p>
                 <p>Vue.js</p>
                 <p>Apache</p>
-                <p>MariaDB(MySQL)</p>
+                <p>MariaDB</p>
+                <p>Git</p>
+                <p>Bash</p>
             </article>
         </section>
         <section class="projects_section">
             <article class="proj_article">
-                <p class="proj_title">Underrail Feat Generator</p>
+                <h3 class="proj_title">Underrail Feat Generator</h3>
                 <img class="proj_image" src="" alt="">
-                <p class="proj_desc">desc</p>
+                <p class="proj_desc">A web application that takes nearly every feat in the game Underrail, compares it
+                    to the
+                    skill and stat values you provide and generates relevant feats, which it returns to you. You can
+                    sign up and
+                    login to create your own character sheets and save your builds, making them viewable publicly and
+                    privately.
+                    The backend is written in Go, and the front end uses Vue3 with Pinia for state management. For the
+                    database,
+                    I use the relational database MariaDB.
+                </p>
                 <div class="proj_skills">
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
+                    <p>Go</p>
+                    <p>Vue3</p>
+                    <p>MariaDB</p>
+                    <p>JSON</p>
                 </div>
             </article>
         </section>
@@ -60,9 +102,10 @@
         <nav>
             <p>LinkedIn</p>
             <p>GitHub</p>
-            <p>cameron.ian.ronald.ord@outlook.com</p>
+            <p class="email_tag">cameron.ian.ronald.ord@outlook.com</p>
         </nav>
     </footer>
     <script type="module" src="js/main.js"></script>
 </body>
+
 </html>

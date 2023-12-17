@@ -3,9 +3,17 @@
 .page_header{
     display: grid;
     align-items: center;
-    justify-items: start;
+    justify-items: center;
     text-align: start;
-    >.header_text{
-        
+    min-height: 75px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    >.header_text_div{
+        width: 80%;
+        display: grid;
+        justify-items: start;
+        >.header_text{
+
+        }
     }
 }
