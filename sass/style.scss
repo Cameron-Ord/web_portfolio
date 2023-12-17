@@ -5,16 +5,44 @@
 body{
     padding: 0px;
     margin: 0px;
+    background-color: var(--white);
 }
 
-p,h1,h2,h3,h4,a{
+h3,h4{
+    letter-spacing: 1px;
     margin: 0px;
     padding: 0px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: clamp(1.05em, 2vw, 1.45em);
+}
+
+h2{
+    letter-spacing: 1px;
+    margin: 0px;
+    padding: 0px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: clamp(1.25em, 2vw, 1.65em); 
+}
+
+h1{
+    letter-spacing: 1px;
+    margin: 0px;
+    padding: 0px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: clamp(1.55em, 2vw, 1.85em); 
+}
+
+p{
+    letter-spacing: 0.8px;
+    margin: 0px;
+    padding: 0px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: clamp(1em, 2vw, 1.25em);
 }
 
 .email_tag{
     word-break: break-word;
+    color: var(--black);
 }
 //MAIN PAGE
 .page_main{
@@ -39,27 +67,47 @@ p,h1,h2,h3,h4,a{
                 max-width: 60%;
                 height: auto;
                 border-radius: 50%;
+                padding: 2.5px;
+                background-color: var(--accent);
             }
         }
         >.hero_text{
             display: grid;
             justify-items: start;
-            row-gap: 25px;
+            row-gap: 15px;
             width: 80%;
             padding-top: 7px;
             padding-bottom: 7px;
             padding-right: 8.5px;
             padding-left: 8.5px;
             border-radius: 7.5px;
-
-            >h3{
-
+            >.text_div{
+                display: grid;
+                justify-items: start;
+                
+                >h4{
+                    color: var(--accent);
+                }
+                >h1{
+                    color: var(--black);
+                }
+                >.hello_text{
+                    text-decoration: underline 1px;
+                    color: var(--accent);
+                    padding-top: 2.5px;
+                    padding-bottom: 2.5px;
+                }
             }
-            >h1{
-
-            }
-            >p{
-
+            >.creds_div{
+                display: grid;
+                justify-items: start;
+                row-gap: 10px;
+                >.phone_text{
+                    color: var(--black);
+                }
+                >.resume_tag{
+                    color: var(--black);
+                }
             }
         }
     }
@@ -73,11 +121,70 @@ p,h1,h2,h3,h4,a{
             justify-items: start;
             width: 80%;
             row-gap: 25px;
-            >h2{
 
+            >.about_h_div{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                display: grid;
+                justify-items: start;
+                text-align: start;
+                row-gap: 20px;
+
+                >.about_heading{
+                    color: var(--accent);
+                }
+                >.about_text{
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-weight:bold;
+                }
+                >.view_proj_text{
+                    color: var(--accent);
+                    padding: 5.5px;
+                    border-radius: 15px;
+                    cursor: pointer;
+                    border: solid var(--accent) 1px;
+                }
             }
-            >p{
+            >.bring_to_div{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                display: grid;
+                justify-items: start;
+                text-align: start;
+                row-gap: 20px;
 
+                >.subheader_table{
+                    color: var(--black);
+                    font-weight: 400;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+                >.sub_heading{
+                    color: var(--black);
+                }
+                >.view_git_text{
+                    color: var(--accent);
+                    padding: 5.5px;
+                    border-radius: 15px;
+                    cursor: pointer;
+                    border: solid var(--accent) 1px;
+                }
+            }
+
+            >.table_wrapper{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                display: grid;
+                justify-items: start;
+                text-align: start;
+                row-gap: 20px;
+                >.default_text{
+                    color: var(--black);
+                }
+                >.skill_sub_heading{
+                    color: var(--black);
+                }
             }
         }
     }
@@ -98,7 +205,14 @@ p,h1,h2,h3,h4,a{
             row-gap: 25px;
             grid-template-columns: repeat(auto-fit, minmax(125px,1fr));
             >p{
-                padding: 5px;
+                font-weight: 400;
+                color: var(--accent);
+                border-radius: 20px;
+                border: solid var(--accent) 1px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 7.5px;
+                padding-right: 7.5px;
             }
         }
     }
@@ -118,8 +232,19 @@ p,h1,h2,h3,h4,a{
             border-radius: 7.5px;
             display: grid;
             row-gap: 25px;
-            >.proj_title{
-                padding: 5px;
+            >.title_container{
+                display: grid;
+                justify-items: start;
+                text-align: start;
+                >.proj_title{
+                    padding: 5px;
+                }
+                >.git_repo_tag{
+                    padding: 5px;
+                    border: solid var(--accent) 1px;
+                    color: var(--accent);
+                    border-radius: 15px;
+                }
             }
             >.proj_image{
                 padding-bottom: 7px;
