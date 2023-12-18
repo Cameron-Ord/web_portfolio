@@ -14,15 +14,34 @@
             text-align: center;
         }
     }
-    >nav{
+    >.footer_nav{
         row-gap: 25px;
         display: grid;
         justify-items: center;
         padding-top: 10px;
-        padding-bottom: 10px;
-        >p{
-            padding: 5px;
+        padding-bottom: 25px;
+        >.view_git_text{
+            
             text-align: center;
+            border: solid var(--accent) 1px;
+            color: var(--accent);
+            cursor: pointer;
+            border-radius: 6px;
+            padding-top: 4px;
+            padding-right: 7px;
+            padding-left: 7px;
+            padding-bottom: 4px;
+        }
+        >.view_linkedin_text{
+            text-align: center;
+            border: solid var(--accent) 1px;
+            color: var(--accent);
+            cursor: pointer;
+            border-radius: 6px;
+            padding-top: 4px;
+            padding-right: 7px;
+            padding-left: 7px;
+            padding-bottom: 4px;
         }
     }
 }

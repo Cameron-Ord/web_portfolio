@@ -10,6 +10,8 @@
 </head>
 
 <body>
+    <script type="module" src="/js/main.js">
+    </script>
     <header class="page_header">
         <div class="header_text_div">
             <h2 class="header_text">CAMERON ORD</h2>
@@ -17,20 +19,21 @@
     </header>
     <main class="page_main">
         <section class="hero_section">
-            <div class="image_container">
-                <img id="port_image" src="/files/me.jpg" alt="my face">
-            </div>
             <article class="hero_text">
-                <div class="text_div">
-                    <h2 class="hello_text">Hello, I'm</h2>
-                    <h1>Cameron Ord</h1>
-                    <h4>Web Developer</h4>
+                <div class="image_container">
+                    <img id="port_image" src="/files/me.jpg" alt="my face">
                 </div>
-                <div class="creds_div">
-                    <p class="email_tag">cameron.ian.ronald.ord@outlook.com</p>
-                    <p class="phone_text">587-990-0854</p>
-                    <p class="resume_tag">Resume</p>
-                </div>
+                <span class="hero_text_span">
+                    <div class="text_div">
+                        <h2 class="hello_text">Hello, I'm</h2>
+                        <h1>Cameron Ord</h1>
+                        <h4>Web Developer</h4>
+                    </div>
+                    <div class="creds_div">
+                        <p class="email_tag">cameron.ian.ronald.ord@outlook.com</p>
+                        <p class="phone_text">587-990-0854</p>
+                    </div>
+                </span>
             </article>
         </section>
         <section class="about_section">
@@ -50,6 +53,10 @@
                     <p class="subheader_table">From using client side JavaScript to create a user friendly UI, or writing robust, secure server code. I have the tools and skills to build great applications.</p>
                     <p class="view_git_text">Check out my GitHub</p>
                 </div>
+            </article>
+        </section>
+        <section class="table_sect">
+            <article class="tables_container">
                 <div class="table_wrapper">
                     <h4 class="skill_sub_heading">Full-Stack Developer</h4>
                     <p class="default_text">From JavaScript to Go and Python, I navigate the full stack with ease. HTML/CSS
@@ -82,57 +89,64 @@
                 </div>
             </article>
         </section>
-        <section class="skills_section">
+        <section class="skills-proj-wrapping">
             <article class="wrapper_article">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript</p>
-                <p>Go</p>
-                <p>Python</p>
-                <p>Vue.js</p>
-                <p>Apache</p>
-                <p>MariaDB</p>
-                <p>Git</p>
-                <p>Bash</p>
-            </article>
-        </section>
-        <section class="projects_section">
-            <article class="proj_article">
-                <div class="title_container">
-                    <h3 class="proj_title">Underrail Feat Generator</h3>
-                    <p class="git_repo_tag">GitHub</p>
+                <div class="arch_skills">
+                    <header class="outline_text_container">
+                        <h1 class="outline_text">An outline of my skills</h1>
+                    </header>
+                    <div class="skills_container">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JavaScript</p>
+                        <p>Go</p>
+                        <p>Python</p>
+                        <p>Vue.js</p>
+                        <p>Apache</p>
+                        <p>MariaDB</p>
+                        <p>Git</p>
+                        <p>Bash</p>
+                    </div>
                 </div>
-                <img class="proj_image" src="" alt="">
-                <p class="proj_desc">A web application that takes nearly every feat in the game Underrail, compares it
-                    to the
-                    skill and stat values you provide and generates relevant feats, which it returns to you. You can
-                    sign up and
-                    login to create your own character sheets and save your builds, making them viewable publicly and
-                    privately.
-                    The backend is written in Go, and the front end uses Vue3 with Pinia for state management. For the
-                    database,
-                    I use the relational database MariaDB.
-                </p>
-                <div class="proj_skills">
-                    <p>Go</p>
-                    <p>Vue3</p>
-                    <p>MariaDB</p>
-                    <p>JSON</p>
+                <div class="arch">
+                    <header class="projects_headertext_container">
+                        <h1 class="projects_header">My Projects</h1>
+                    </header>
+                    <div class="title_container">
+                        <h2 class="proj_title">Underrail Feat Generator</h2>
+                        <div class="inner_div">
+                            <p class="git_repo_tag">GitHub</p>
+                            <p class="site_tag">Live Website</p>
+                        </div>
+                    </div>
+                    <p class="proj_desc">A web application that takes nearly every feat in the game Underrail, compares it
+                        to the
+                        skill and stat values you provide and generates relevant feats, which it returns to you. You can
+                        sign up and
+                        login to create your own character sheets and save your builds, making them viewable publicly and
+                        privately.
+                        The backend is written in Go, and the front end uses Vue3 with Pinia for state management. For the
+                        database,
+                        I use the relational database MariaDB.
+                    </p>
+                    <div class="proj_skills">
+                        <p>Go</p>
+                        <p>Vue3</p>
+                        <p>MariaDB</p>
+                        <p>JSON</p>
+                    </div>
                 </div>
             </article>
         </section>
     </main>
     <footer class="page_footer">
-        <div class="footer_heading">
-            <h2>Get in touch</h2>
-        </div>
-        <nav>
-            <p>LinkedIn</p>
-            <p>GitHub</p>
+        <h1 class="footer_heading">Get in touch</h1>
+        <nav class="footer_nav">
+            <p class="view_linkedin_text">LinkedIn</p>
+            <p class="view_git_text">GitHub</p>
             <p class="email_tag">cameron.ian.ronald.ord@outlook.com</p>
         </nav>
     </footer>
-    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
